@@ -1,0 +1,107 @@
+# ================================================
+# Open Dough Bakery — Decap CMS Configuration
+# ================================================
+# SETUP REQUIRED: Fill in the two values below.
+# See CMS-SETUP.md in the project root for instructions.
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # e.g. heidijumper/open-dough-bakery
+  branch: main
+  auth_type: pkce
+  app_id: YOUR_GITHUB_OAUTH_APP_CLIENT_ID     # from your GitHub OAuth App settings
+
+# Where uploaded images go
+media_folder: images
+public_folder: /images
+
+# ================================================
+# COLLECTIONS
+# ================================================
+
+collections:
+
+  # ---- MENU ----
+  - name: menu
+    label: "🍞 Menu"
+    files:
+      - label: Menu Items
+        name: menu
+        file: data/menu.json
+        fields:
+          - label: Categories
+            name: categories
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - label: Category Name
+                name: name
+                widget: string
+                hint: "e.g. Artisan Breads, Sweet Treats"
+              - label: Icon
+                name: icon
+                widget: string
+                hint: "Paste an emoji — e.g. 🍞 🥐 🍪"
+              - label: Items
+                name: items
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - label: Item Name
+                    name: name
+                    widget: string
+                  - label: Price
+                    name: price
+                    widget: string
+                    hint: 'e.g. "$10" or "from $9"'
+                  - label: Quantity / Serves
+                    name: qty
+                    widget: string
+                    hint: 'e.g. "1 loaf" or "Box of 6"'
+                  - label: Description
+                    name: description
+                    widget: text
+                  - label: Variants (optional)
+                    name: variants
+                    widget: list
+                    required: false
+                    summary: "{{fields.label}}"
+                    hint: "Use for size/flavor options with individual prices"
+                    fields:
+                      - label: Variant Label
+                        name: label
+                        widget: string
+                        hint: 'e.g. "Plain — $9" or "Chocolate Chip"'
+
+  # ---- SITE SETTINGS ----
+  - name: settings
+    label: "⚙️ Site Settings"
+    files:
+      - label: Contact & Ordering Info
+        name: settings
+        file: data/site.json
+        fields:
+          - label: Email Address
+            name: email
+            widget: string
+            hint: "Used for general contact and inquiries"
+          - label: Online Order Link
+            name: order_url
+            widget: string
+            hint: "Your Square (or other) ordering page URL"
+          - label: Pickup Location
+            name: pickup
+            widget: string
+            hint: 'e.g. "Heidi'\''s porch · North Little Rock, AR"'
+          - label: Venmo Handle
+            name: venmo
+            widget: string
+            hint: 'Include the @ — e.g. "@Heidi-Jumper"'
+          - label: Cash App Handle
+            name: cashapp
+            widget: string
+            hint: 'Include the $ — e.g. "$OpenDoughBakery"'
+          - label: Cottage Baker Disclosure
+            name: disclosure
+            widget: text
+            hint: "The legal notice that appears at the bottom of every page"

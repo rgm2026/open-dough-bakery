@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Open Dough Bakery — Handmade Bread &amp; Baked Goods in North Little Rock</title>
+  <meta name="description" content="Homemade artisan sourdough, soft sandwich loaves, bagels, muffins, dinner rolls, and cookies. Fresh baked goods crafted by hand in North Little Rock, AR. Order from Open Dough Bakery today.">
+  <meta name="keywords" content="homemade sourdough bread, artisan bread NLR, handmade bagels, fresh muffins, cottage bakery menu, North Little Rock baked goods">
+  <meta property="og:title" content="Menu | Open Dough Bakery">
+  <meta property="og:description" content="Handmade artisan sourdough, bagels, muffins, cookies and more — baked fresh to order in North Little Rock, AR.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Open Dough Bakery — Home">
+        <img src="images/logo.jpg" alt="Open Dough Bakery" class="nav-logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-cta"><a href="https://open-dough-bakery.square.site/" data-site-href="order" target="_blank" rel="noopener">Order Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="menu-heading">
+      <div class="page-hero-inner">
+        <span class="eyebrow">Fresh Baked Goods</span>
+        <h1 id="menu-heading">What's in the Oven</h1>
+        <p>Handmade, slow-fermented, and baked with an open heart. Here's what you can order from Heidi's kitchen in North Little Rock.</p>
+      </div>
+    </section>
+
+    <!-- MENU — rendered from data/menu.json -->
+    <div id="menu-content" aria-live="polite">
+      <div style="padding: 80px 24px; text-align: center;">
+        <p style="color: var(--brown-mid); font-size: 0.95rem;">Loading menu&hellip;</p>
+      </div>
+    </div>
+
+    <!-- SPECIAL REQUESTS -->
+    <div class="special-request-wrap">
+      <div class="special-request-box">
+        <div>
+          <h3>Have a Special Request?</h3>
+          <p>Don't see exactly what you're looking for? Heidi loves a good baking challenge. Reach out about custom orders, special flavors, or anything else you have in mind.</p>
+        </div>
+        <a href="mailto:opendough@gmail.com" data-site-href="email" style="white-space: nowrap; color: var(--amber); font-weight: 600; text-decoration: underline;">opendough@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- ORDER CTA -->
+    <section class="order-cta" aria-labelledby="order-heading">
+      <div class="container">
+        <span class="eyebrow">Let's Get This Dough</span>
+        <h2 id="order-heading">How to Place an Order</h2>
+        <p class="intro">Ordering is easy — browse, click, and we'll have it fresh and ready for pickup.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num" aria-hidden="true">1</div>
+            <h4>Pick Your Items</h4>
+            <p>Browse the menu above and decide what you'd like. Mix, match, and go with your gut.</p>
+          </div>
+          <div class="step">
+            <div class="step-num" aria-hidden="true">2</div>
+            <h4>Order on Square</h4>
+            <p>Place your order securely through our Square shop. For custom requests, email <span data-site="email">opendough@gmail.com</span>.</p>
+          </div>
+          <div class="step">
+            <div class="step-num" aria-hidden="true">3</div>
+            <h4>Pick Up from the Porch</h4>
+            <p>Swing by <span data-site="pickup">Heidi's porch in NLR</span> and pick up your fresh, same-day baked goods.</p>
+          </div>
+        </div>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.82rem; margin-bottom: 14px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;">We accept</p>
+        <div class="payment-methods">
+          <span class="payment-badge" data-site="venmo">Venmo @Heidi-Jumper</span>
+          <span class="payment-badge" data-site="cashapp">Cash App $OpenDoughBakery</span>
+          <span class="payment-badge">Cash</span>
+        </div>
+        <a href="https://open-dough-bakery.square.site/" class="btn btn-primary" data-site-href="order" target="_blank" rel="noopener">Order on Square</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DISCLOSURE -->
+  <div class="disclosure" role="note">
+    <p data-site="disclosure">All items are baked in a private residence that is exempt from state licensing and inspection. Products may contain allergens. Please contact us with any dietary concerns before ordering.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-main">Open Dough</span>
+        <span class="logo-sub">Bakery</span>
+        <p>Handmade with love in North Little Rock, Arkansas. Giving back one loaf at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="mailto:opendough@gmail.com" data-site="email" data-site-href="email" style="color: var(--amber);">opendough@gmail.com</a></p>
+        <div class="footer-sub">
+          <h4>Payment</h4>
+          <p>Venmo &middot; Cash App &middot; Cash</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Open Dough Bakery. All rights reserved.</p>
+      <p>Proudly supporting <a href="about.html">Project Rescue</a></p>
+    </div>
+  </footer>
+
+  <script>
+    /* Nav toggle */
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-links a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* Render menu from data/menu.json */
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function renderMenu(data) {
+      var el = document.getElementById('menu-content');
+      if (!data.categories || !data.categories.length) {
+        el.innerHTML = '<p style="text-align:center;padding:60px 24px;color:var(--brown-mid);">Menu coming soon — email us to ask what\'s fresh today.</p>';
+        return;
+      }
+
+      el.innerHTML = data.categories.map(function (cat, i) {
+        var isEven = i % 2 !== 0;
+        return '<section class="menu-section' + (isEven ? '' : '') + '" aria-labelledby="cat-' + i + '" style="' + (isEven ? 'background:var(--cream-alt);' : '') + '">' +
+          '<div class="menu-section-inner">' +
+          '<div class="menu-section-header">' +
+          '<span class="section-cat-icon" aria-hidden="true">' + escapeHtml(cat.icon || '') + '</span>' +
+          '<h2 id="cat-' + i + '">' + escapeHtml(cat.name) + '</h2>' +
+          '</div>' +
+          '<div class="menu-grid">' +
+          cat.items.map(function (item) {
+            var variants = (item.variants && item.variants.length)
+              ? '<div class="menu-item-variants">' +
+                item.variants.map(function (v) {
+                  return '<span class="variant-tag">' + escapeHtml(v.label) + '</span>';
+                }).join('') +
+                '</div>'
+              : '';
+            return '<article class="menu-item">' +
+              '<div class="menu-item-header">' +
+              '<h3>' + escapeHtml(item.name) + '</h3>' +
+              '<span class="menu-item-price">' + escapeHtml(item.price) + '</span>' +
+              '</div>' +
+              '<p class="menu-item-qty">' + escapeHtml(item.qty) + '</p>' +
+              '<p>' + escapeHtml(item.description) + '</p>' +
+              variants +
+              '</article>';
+          }).join('') +
+          '</div>' +
+          '</div>' +
+          '</section>';
+      }).join('');
+    }
+
+    fetch('data/menu.json')
+      .then(function (r) { return r.json(); })
+      .then(renderMenu)
+      .catch(function () {
+        var el = document.getElementById('menu-content');
+        el.innerHTML = '<div style="padding:60px 24px;text-align:center;">' +
+          '<p style="color:var(--brown-mid);">Menu unavailable right now — email us at <a href="mailto:opendough@gmail.com" style="color:var(--amber);">opendough@gmail.com</a> to ask what\'s fresh.</p>' +
+          '</div>';
+      });
+  </script>
+
+  <script src="js/site.js"></script>
+
+</body>
+</html>

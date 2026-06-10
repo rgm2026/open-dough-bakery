@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "name": "Artisan Breads",
+      "icon": "🍞",
+      "items": [
+        {
+          "name": "Artisan Sourdough",
+          "price": "from $9",
+          "qty": "1 loaf",
+          "description": "Our signature — slow-fermented sourdough with a crackling crust, open crumb, and the deep tangy flavor that only comes from patience. The kind of loaf that makes the whole house smell incredible. Available plain or with bold, savory add-ins.",
+          "variants": [
+            { "label": "Plain — $9" },
+            { "label": "Jalapeño Cheese — $11" },
+            { "label": "Italian Herbs & Cheese — $11" }
+          ]
+        },
+        {
+          "name": "Soft White Sandwich Loaf",
+          "price": "$10",
+          "qty": "1 loaf · sliced unless otherwise requested",
+          "description": "Pillowy, tender, and perfectly suited for anything from morning toast to the best sandwich you've had all week. Pre-sliced for your convenience, or kept whole if you prefer.",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "name": "Rolls & Bagels",
+      "icon": "🥐",
+      "items": [
+        {
+          "name": "Fluffy Dinner Rolls",
+          "price": "$12",
+          "qty": "8 rolls",
+          "description": "Soft, pillowy, and warm — the kind of dinner roll that disappears before the main course hits the table. Perfect for holidays, family dinners, or Tuesday nights when you just want something really good.",
+          "variants": []
+        },
+        {
+          "name": "Bagels",
+          "price": "$12",
+          "qty": "6 bagels",
+          "description": "Chewy, hearty, and made from scratch. Load them up with cream cheese, your favorite toppings, or enjoy them plain and fresh-baked. Way better than anything from the store — and you know it.",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "name": "Sweet Treats",
+      "icon": "🍪",
+      "items": [
+        {
+          "name": "Blueberry Lemon Muffins",
+          "price": "$15",
+          "qty": "Box of 6",
+          "description": "Bright, zesty lemon batter with pops of juicy blueberry in every bite. Light enough for breakfast, delightful enough for dessert. Sunshine in muffin form.",
+          "variants": []
+        },
+        {
+          "name": "Homemade Cookies",
+          "price": "$18",
+          "qty": "1 dozen",
+          "description": "Three classic flavors, all made from scratch with real ingredients and real love. Great for gifting, for a gathering, or for eating straight from the bag at midnight with zero apologies.",
+          "variants": [
+            { "label": "Chocolate Chip" },
+            { "label": "Oatmeal" },
+            { "label": "Peanut Butter" }
+          ]
+        }
+      ]
+    }
+  ]
+}
